@@ -305,6 +305,8 @@ SafeTravels provides a comprehensive backend system that enables:
 ## 👥 Team
 
 - **Developer**: Alisher Dzhusuev
+- **Debug** : ChatGpt
+- **Architecture Assitent** : Claude
 - **Course**: OOP with Java
 - **University**: University of Central Asia
 
