@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: safetravels
+  
+  # PostgreSQL Database Configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/safetravels
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:changeme}
+  
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: ${JWT_SECRET:mySecretKeyForJWTTokenGenerationSafeTravelsApplication2024}
+  expiration: 86400000
+
+logging:
+  level:
+    com.safetravels: DEBUG
+
+server:
+  port: 8080
